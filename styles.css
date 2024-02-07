@@ -221,3 +221,29 @@ body {
 .alert.hide {
   opacity: 0;
 }
+
+@media (width <= 600px) {
+
+  .guess-grid {
+    /* display: grid;
+    justify-content: center;
+    align-content: center; */
+    flex-grow: 0.4;
+    grid-template-columns: repeat(5, 18vw);
+    grid-template-rows: repeat(6, 18vw);
+    /* gap: 0.25em;
+    margin-bottom: 0.4em; */
+  }
+
+  .keyboard {
+    /* display: grid; */
+    grid-template-columns: repeat(20, minmax(auto, 96%));
+    grid-template-rows: repeat(6, 7em);
+    height: 20vh;
+    /* grid-auto-rows: 3em; */
+    /* gap: 0.25em; */
+    /* justify-content: center; */
+  }
+  
+
+}
