@@ -15299,7 +15299,7 @@ const alertContainer = document.querySelector("[data-alert-container]");
 const WORD_LENGTH = 5;
 const FLIP_ANIMATION_DURATION = 500;
 const DANCE_ANIMATION_DURATION = 500;
-const referenceDate = new Date(2022, 0, 1);
+const referenceDate = new Date(2023, 0, 1);
 const msOffsetFromRefDate = Date.now() - referenceDate;
 const dayOffsetFromRefDate = msOffsetFromRefDate / 1000 / 60 / 60 / 24;
 const targetWord =
@@ -15464,7 +15464,7 @@ function shakeTiles(tiles) {
 
 function checkWinLose(guess, tiles) {
   if (guess === targetWord) {
-    showAlert("You Win! Ogilvy Loves You ❤️ ", 30000000);
+    showAlert("You Win! 🎉🎉 New Ogilvy Wall word coming tomorrow", 5000);
     danceTiles(tiles);
     stopInteraction();
     return;
