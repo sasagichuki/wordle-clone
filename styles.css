@@ -71,9 +71,9 @@ body {
 }
 
 .key.wrong-location {
-  --hue: 50;
-  --saturation: 55%;
-  --lightness: 63%;
+  --hue: 7;
+  --saturation: 83%;
+  --lightness: 79%;
 }
 
 .key.correct {
@@ -119,7 +119,7 @@ body {
 
 .tile[data-state="wrong-location"] {
   border: none;
-  background-color: hsl(60, 55%, 63%);
+  background-color: hsl(7, 83%, 79%);
   color: rgb(255,255,255);
 }
 
