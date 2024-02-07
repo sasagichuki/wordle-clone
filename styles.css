@@ -194,6 +194,7 @@ body {
 }
 
 .alert-container {
+  font-size: 1.2em;
   position: fixed;
   top: 30vh;
   left: 50vw;
@@ -206,7 +207,9 @@ body {
 
 .alert {
   pointer-events: none;
-  background-color: hsl(204, 7%, 85%);
+  color: white;
+  font-weight: 400;
+  background-color: red;
   padding: 0.75em;
   border-radius: 0.25em;
   opacity: 1;
@@ -244,6 +247,9 @@ body {
     /* gap: 0.25em; */
     /* justify-content: center; */
   }
-  
 
+  .alert-container {
+    font-size: 2.3em;
+  }
+  
 }

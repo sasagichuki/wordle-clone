@@ -15464,7 +15464,7 @@ function shakeTiles(tiles) {
 
 function checkWinLose(guess, tiles) {
   if (guess === targetWord) {
-    showAlert("You Win! Ogilvy Loves You ❤️ ", 10000);
+    showAlert("You Win! Ogilvy Loves You ❤️ ", 30000000);
     danceTiles(tiles);
     stopInteraction();
     return;
