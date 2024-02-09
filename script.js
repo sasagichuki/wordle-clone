@@ -15299,7 +15299,7 @@ const alertContainer = document.querySelector("[data-alert-container]");
 const WORD_LENGTH = 5;
 const FLIP_ANIMATION_DURATION = 500;
 const DANCE_ANIMATION_DURATION = 500;
-const referenceDate = new Date(2022, 0, 1);
+const referenceDate = new Date(2024, 0, 1);
 const msOffsetFromRefDate = Date.now() - referenceDate;
 const dayOffsetFromRefDate = msOffsetFromRefDate / 1000 / 60 / 60 / 24;
 const targetWord =
@@ -15472,8 +15472,9 @@ function checkWinLose(guess, tiles) {
 
   const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])");
   if (remainingTiles.length === 0) {
-    showAlert("Correct word: " + targetWord.toUpperCase(), null);
-    stopInteraction();
+    showAlert("Refresh browser and try again", 6000);
+    // showAlert("Correct word: " + targetWord.toUpperCase(), null);
+    // stopInteraction();
   }
 }
 function danceTiles(tiles) {
